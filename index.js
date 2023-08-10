@@ -1,26 +1,29 @@
 const style = document.createElement('style');
 style.textContent = `
-/* Добавьте стили для класса loader */
-.loader {
-  border: 5px solid rgba(255, 255, 255, 01); /* Изменили цвет границы */
-  border-left-color: transparent;
-  width: 36px;
-  border-radius: 50%;
-  height: 36px;
-  animation: spin89345 1s linear infinite;
-  color: white;
-}
-
-@keyframes spin89345 {
-  0% {
-    transform: rotate(0deg);
+  .darkbox {
+    background-color: rgba(0,0,0,.7);
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: resizeAnimation 2s forwards;
   }
 
-  100% {
-    transform: rotate(360deg);
+  @keyframes resizeAnimation {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 400px;
+      height: 300px;
+    }
   }
-}
-
 `;
 
 document.head.appendChild(style);
