@@ -2,19 +2,23 @@ const style = document.createElement('style');
 style.textContent = `
 /* Добавьте стили для класса loader */
 .loader {
-    color: white;
-    background-color: white;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: var(--uib-color);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
+  border: 5px solid rgba(255, 255, 255, 01); /* Изменили цвет границы */
+  border-left-color: transparent;
+  width: 36px;
+  border-radius: 50%;
+  height: 36px;
+  animation: spin89345 1s linear infinite;
+  color: white;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 `;
